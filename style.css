@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    /* background: url("img/texture-paper.png"); */
     background-size: 280px 280px;
 }
 
@@ -753,7 +753,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: #F3976C;
     padding: 40px 40px 40px 40px;
 }
 
@@ -775,11 +775,11 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #303030!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #303030;
     color: #FFFFFF!important;
 }
 
@@ -824,6 +824,32 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
 }
+
+
+/* Classe supplémentaires pour P4*/
+
+.P4-background-F3976C{
+    background-color: #F3976C;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.col-sm-12-new h1{
+    color: black;
+}
+
+#citation-maxime{
+    font-size: 1.4em;
+    font-style: italic;
+}
+
+#citation-maxime-auteur{
+    font-style: normal;
+}
+
+/*Fin Classe supplémentaires pour P4*/
+
+
 
 @media (max-width: 1024px) {
     .bloc {
