@@ -681,7 +681,7 @@ p {
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
+    max-width: 520px;
     margin: auto auto auto auto;
 }
 
@@ -827,11 +827,14 @@ h4 {
 
 
 /* Classe supplémentaires pour P4*/
-
+.P4_flex{
+    display: flex;
+}
 .P4-background-F3976C{
     background-color: #F3976C;
-    padding: 10px 0;
+    padding: 10px 0px;
     border-radius: 10px;
+    
 }
 
 .col-sm-12-new h1{
@@ -928,10 +931,37 @@ height: 100%;
 }
 
 @media (max-width: 767px) {
+/*Ajout P4 La chouette agence*/
+    .col-sm-6{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .P4_texte_creations{
+        margin-bottom: 50px;
+    }
+
+    .img-responsive{
+        margin-left : 25%;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
     }
+
+   .col-sm-3{
+       width: 25%;
+   }
+   .P4_bloc5{
+    max-width: 85%;    
+    align-items: center;
+    justify-content: center;
+   }
+
+    /*Fin ajout P4*/
     h1,
     h2,
     h3,
@@ -1063,6 +1093,12 @@ height: 100%;
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
+    }
+}
+
+@media (max-width:550px) {
+    .tight-width-whitespace{
+        max-width: 95%;
     }
 }
 
