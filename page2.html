@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
 	
-	<script src="./js/jquery-2.1.0.js"></script>
+	<!-- <script src="./js/jquery-2.1.0.js"></script> -->
 	<script src="./js/bootstrap.js"></script>
 	<script src="./js/blocs.js"></script>
 	<script src="./js/jqBootstrapValidation.js"></script>
@@ -35,7 +35,7 @@
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="atlanta web design logo" height="40" /></a>
+				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.webp" alt="atlanta web design logo" height="40" /></a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
@@ -80,19 +80,19 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="separation col-sm-6">
-				<form id="form_1" novalidate success-msg="Votre message a bien été envoyé." fail-msg="Oups, votre message n'a pas pu être envoyé ! Un problème est survenue.">
+				<form title="formulaire" id="form_1" novalidate success-msg="Votre message a bien été envoyé." fail-msg="Oups, votre message n'a pas pu être envoyé ! Un problème est survenue.">
 					<div class="form-group">
 						<label>
 							Nom
 						</label>
-						<input id="name" class="form-control" required />
+						<input title="Nom" id="name" class="form-control" required />
 					</div>
 					<div class="form-group">
 						<label>
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" aria-required="true" aria-invalid="false"  onblur="checkValidity('courriel', '@', 'L’adresse électronique saisie n’est pas valide');"/>
-						<span>Veuillez respecter le format de l'email (exemple@domaine.fr)</span>
+						<input title="Respect format email" id="email" class="form-control" type="email" aria-required="true" aria-invalid="false"  onblur="checkValidity('courriel', '@', 'L’adresse électronique saisie n’est pas valide');"/>
+						<span><strong>Veuillez respecter le format de l'email (exemple@domaine.fr)</strong></span>
 					</div>
 					<!-- <div>
 						<label for="email">
@@ -106,13 +106,13 @@
 						<label>
 							Comment nous avez-vous connu ?
 						</label>
-						<textarea id="message" class="form-control" rows="1" required></textarea>
+						<textarea title="Votre source du site ?" id="message" class="form-control" rows="1" required></textarea>
 					</div>
 					<div class="form-group">
 						<label>
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 						</label>
-						<textarea id="message2" class="form-control" rows="4" cols="50" required></textarea>
+						<textarea title="Détails du projet" id="message2" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
