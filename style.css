@@ -863,6 +863,10 @@ h4 {
 border-right: outset;
 height: 100%;
 }
+
+.P4_bloc5{
+    width: 600px;
+}
 /*Fin Classe supplémentaires pour P4*/
 
 
@@ -903,6 +907,11 @@ height: 100%;
 }
 
 @media (max-width: 991px) {
+
+    .P4_bloc5{
+        width: 600px !important ; 
+    }
+
     .container {
         width: 100%;
     }
@@ -914,21 +923,23 @@ height: 100%;
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
+    
+    /* .bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
-    }
+    } */
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
         width: 100%;
     }
-    .bloc-fill-screen .fill-bloc-top-edge,
+    /* .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
-    }
+    } */
 }
 
 @media (max-width: 767px) {
